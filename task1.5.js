@@ -2,8 +2,8 @@ function drawTriangle(num) {
   let string = '';
   const n = Math.abs(num);
   if (num >= 0) {
-    for (let i = 0; i <= n; i++) {
-      for (let j = 0; j < i; j++) {
+    for (let i = 1; i <= n; i++) {
+      for (let j = 1; j <= i; j++) {
         string += '#';
       }
       string += '\n';
@@ -11,12 +11,13 @@ function drawTriangle(num) {
   }
   if (num < 0) {
     for (let i = n; i >= 1; i--) {
-      for (let j = 0; j < i; j++) {
+      for (let j = 1; j <= i; j++) {
         string += '#';
       }
       string += '\n';
     }
   }
-  console.log(string);
+  console.log(string.trim());
 }
-drawTriangle(4);
+drawTriangle(5);
+
