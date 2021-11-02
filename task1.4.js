@@ -6,6 +6,6 @@ function drawSquare(num) {
     }
     string += '\n';
   }
-  console.log(string);
+  console.log(string.trim();
 }
 drawSquare(3);
